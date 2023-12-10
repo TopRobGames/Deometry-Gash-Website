@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -69,7 +69,15 @@
             width: 100%;
             color: #fff700; /* Set text color to #fff700 */
         }
+
+        /* Additional styling for the view counter */
+        #view-counter {
+            color: white;
+        }
     </style>
+
+    <!-- View Counter Script -->
+    <script type="text/javascript" src="//counter.websiteout.net/js/7/0/65/0"></script>
 </head>
 <body>
 
@@ -131,8 +139,14 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 Deometry Gash. All rights reserved.</p>
+        <p>&copy; 2023 Deometry Gash. All rights reserved. | Views: <span id="view-counter"></span></p>
     </footer>
+
+    <!-- Additional script to update view count -->
+    <script>
+        // Set the view count from the counter script
+        document.getElementById('view-counter').innerText = counter_value;
+    </script>
 
 </body>
 </html>
